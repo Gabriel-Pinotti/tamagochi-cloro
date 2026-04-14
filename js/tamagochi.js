@@ -31,6 +31,16 @@ class Tamagochi {
     this.food -= 5;
     this.fun -= 5;
     this.sleep -= 5;
+
+    if (this.food < 0) {
+      this.food = 0;
+    }
+    if (this.fun < 0) {
+      this.fun = 0;
+    }
+    if (this.sleep < 0) {
+      this.sleep = 0;
+    }
   }
 }
 

@@ -9,7 +9,7 @@ ui.bindEvents(tamagochi);
 ui.update(tamagochi);
 
 while (true) {
-  sleep(10000);
+  await sleep(10000);
   tamagochi.update();
   ui.update(tamagochi);
 }
