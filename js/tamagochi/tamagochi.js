@@ -1,10 +1,10 @@
 class Tamagochi {
   constructor(name) {
     this.name = name;
-    this.food = 5;
-    this.fun = 5;
-    this.sleep = 5;
-    this.status = "normal";
+    this.food = 20;
+    this.fun = 20;
+    this.sleep = 20;
+    this.status = 0;
   }
 
   addFood() {
@@ -25,25 +25,6 @@ class Tamagochi {
     this.sleep += 10;
     if (this.sleep > 100) {
       this.sleep = 100;
-    }
-  }
-
-  update() {
-    this.food -= 5;
-    this.fun -= 5;
-    this.sleep -= 5;
-
-    if (this.food <= 0) {
-      this.status = "hungry";
-      this.food = 0;
-    }
-    if (this.fun <= 0) {
-      this.status = "bored";
-      this.fun = 0;
-    }
-    if (this.sleep <= 0) {
-      this.status = "sleepy";
-      this.sleep = 0;
     }
   }
 }

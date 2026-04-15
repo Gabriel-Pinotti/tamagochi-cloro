@@ -22,7 +22,7 @@ class UI {
     this.food.innerText = tamagochi.food;
     this.fun.innerText = tamagochi.fun;
     this.sleep.innerText = tamagochi.sleep;
-    updateSprite(this, tamagochi);
+    updateSprite(this, tamagochi.status);
 
     console.log("Updated sucessfuly!");
   }
